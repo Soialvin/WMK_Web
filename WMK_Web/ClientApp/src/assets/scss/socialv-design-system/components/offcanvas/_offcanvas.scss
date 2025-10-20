@@ -1,0 +1,6 @@
+.offcanvas {
+    z-index: 11111;
+    &.live-customizer{
+        box-shadow: var(--bs-box-shadow-sm);
+    }
+}

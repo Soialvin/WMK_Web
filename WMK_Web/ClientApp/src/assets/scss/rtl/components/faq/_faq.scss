@@ -1,0 +1,16 @@
+.accordion-item {
+    .accordion-button {
+        &::after {
+            content: "\e138";
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        &:not(.collapsed) {
+
+            &::after {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

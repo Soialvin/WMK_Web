@@ -1,0 +1,23 @@
+/*!
+* Version: 5.2.2
+* Template: SocialV - Responsive Bootstrap 5 Admin Dashboard Template
+* Author: iqonic.design
+* Design and Developed by: iqonic.design
+* NOTE: This file contains the styling for responsive Template.
+*
+*/
+@import "./bootstrap/mixins/banner";
+@include bsBanner("");
+
+@import "./socialv-design-system/helper/fonts";
+
+// Configuration
+@import "./bootstrap/functions";
+@import "./socialv-design-system/variables";
+@import "./bootstrap/variables";
+@import "./bootstrap/maps";
+@import "./bootstrap/mixins";
+@import "./bootstrap/utilities";
+
+// Rtl mode files
+@import "./rtl/index";

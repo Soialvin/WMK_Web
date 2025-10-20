@@ -1353,7 +1353,6 @@
   </div>
 </template>
 <script>
-import { useSetting } from "../../../../store/pinia";
 import { computed, ref, watch } from "vue";
 import NavItems from "./NavItems.vue";
 export default {

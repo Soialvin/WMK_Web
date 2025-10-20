@@ -1,0 +1,180 @@
+@each $color,
+$value in $theme-colors {
+    .table-#{$color} {
+        --bs-table-bg: var(--bs-#{$color});
+        --bs-table-border-color: var(--bs-#{$color});
+    }
+}
+
+#exampleInputSearch {
+    width: auto;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    thead {
+        th {
+            text-transform: uppercase;
+            border: 0;
+        }
+    }
+}
+
+.table-forum {
+    thead {
+        white-space: nowrap;
+
+        tr {
+            th {
+                padding: 1rem 1.5rem;
+                border: none;
+                background-color: var(--bs-primary);
+                color: var(--bs-white);
+                text-transform: capitalize;
+                white-space: nowrap;
+                font-weight: 600;
+
+                &:first-child {
+                    border-left: none;
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                &:first-child {
+                    border-top-left-radius: .375rem;
+                }
+
+                &:last-child {
+                    border-top-right-radius: .375rem;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 1rem 1.5rem;
+                border: none;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                &:first-child {
+                    border-left: none;
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                .iq-sub-label {
+                    margin-bottom: 0.125rem;
+                }
+
+                .avatar-group img {
+                    margin-right: -18px;
+                }
+            }
+
+            &:last-child {
+                th {
+                    &:first-child {
+                        border-bottom-left-radius: .375rem;
+                    }
+                }
+
+                td {
+
+                    &:last-child {
+                        border-bottom-right-radius: .375rem;
+                    }
+                }
+            }
+        }
+    }
+
+    overflow: hidden;
+}
+
+.table.forum-table>:not(caption)>*>* {
+    padding: $spacer;
+}
+
+.forum-table.table>:not(:first-child) {
+    border-top: 0px solid currentColor;
+}
+
+tr,
+td,
+th {
+    text-wrap: nowrap;
+}
+
+.table-invoice {
+    th {
+        vertical-align: top;
+    }
+
+    tr,
+    td,
+    th {
+        text-wrap: wrap;
+    }
+}
+
+.table-primary {
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius-lg);
+    border-collapse: separate;
+    border-spacing: 0;
+
+    table {
+        display: table;
+
+        th {
+            background-color: var(--bs-primary);
+            color: var(--bs-white);
+        }
+
+        th,
+        td,
+        tr {
+            border: 0;
+        }
+
+        tbody {
+            .table-title {
+                color: var(--lt-color-gray-900);
+            }
+
+            tr {
+                border-bottom: 1px solid var(--bs-border-color);
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    #exampleInputSearch {
+        width: 100%;
+    }
+
+    .user-list-files.d-flex {
+        display: block !important;
+        text-align: center;
+        margin-top: 1.875rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+.notification {
+    .content-inner {
+        padding-top: 1.5rem;
+    }
+}
+
+// create new post\
+.create-post-data {
+    ul {
+        li {
+            line-height: 0;
+        }
+    }
+}
+
+.right-sidebar-close {
+    .content-inner {
+        margin-right: 0 !important;
+        transition: all 0.3s ease-in;
+    }
+}
+
+.social-connect-card {
+    .card-body {
+        border-radius: 0.5rem;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: 991px) {
+            top: 20%;
+        }
+
+        @media (max-width: 768px) {
+            top: 5%;
+        }
+
+        p {
+            @media (max-width: 991px) {
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1.2rem;
+                padding: 0 1rem;
+            }
+        }
+
+        img {
+            height: 40px;
+
+            @media (max-width: 768px) {
+                height: 35px;
+            }
+        }
+
+        .btn {
+            border-radius: 0.2rem;
+            transition: all 0.3s ease;
+            background-color: var(--bs-white);
+            color: var(--bs-black);
+
+            @media (max-width: 991px) {
+                font-size: 1.2rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .fixed-suggestion {
+        position: sticky;
+        top: 80px;
+    }
+}

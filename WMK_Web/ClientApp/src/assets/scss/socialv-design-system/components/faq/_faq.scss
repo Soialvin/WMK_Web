@@ -1,0 +1,43 @@
+.accordion-item {
+  background-color: var(--bs-gray-900);
+  padding: 40px;
+  margin-bottom: 32px;
+
+  .accordion-button {
+    padding: 0;
+    border: 0;
+    background: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bs-heading-color);
+
+    &::after {
+      content: "\e13a";
+      font-family: "Phosphor-Bold" !important;
+      background: var(--bs-primary);
+      color: var(--bs-white);
+      font-size: 18px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-image: none;
+    }
+
+    &:not(.collapsed) {
+      background: inherit;
+      box-shadow: none;
+      color: var(--bs-primary);
+
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    &:focus {
+      border: 0;
+      box-shadow: none;
+      background: inherit;
+      box-shadow: unset;
+    }
+  }
+}

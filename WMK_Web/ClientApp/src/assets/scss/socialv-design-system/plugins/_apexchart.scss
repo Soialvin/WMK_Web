@@ -1,0 +1,123 @@
+// ==========================
+// Dark Mode ApexCharts Styling
+// ==========================
+  .apexcharts-tooltip {
+    color: var(--bs-heading-color) !important;
+    background: var(--bs-gray-200) !important;
+    border: none !important;
+  }
+
+  .apexcharts-tooltip-title {
+    background-color: var(--bs-gray-200) !important;
+    color: var(--bs-heading-color) !important;
+    border-bottom: 1px solid var(--bs-border-color) !important;
+  }
+
+  .apexcharts-legend-text {
+    color: var(--bs-heading-color) !important;
+  }
+
+// ==========================
+// RTL Styling
+// ==========================
+
+[dir="rtl"] {
+  .apexcharts-legend-series {
+    gap: 0.25rem !important;
+  }
+
+  @media screen and (min-width: 999px) and (max-width: 1459px) {
+    .admin-chart-06 {
+      .apexcharts-pie {
+        g {
+          transform: translate(17px, 0px) !important;
+        }
+      }
+
+      .apexcharts-legend {
+        transform: translate(48px, 0px) !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+    .admin-chart-06 {
+      .apexcharts-canvas {
+        transform: translate(-180px, 0px) !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 499px) {
+    .admin-chart-06 {
+      .apexcharts-canvas {
+        transform: translate(-60px, 0px) !important;
+      }
+    }
+  }
+}
+
+// ==========================
+// ApexCharts Axis Label Styling
+// ==========================
+
+.apexcharts-yaxis,
+.apexcharts-xaxis {
+  .apexcharts-yaxis-texts-g,
+  .apexcharts-xaxis-texts-g {
+    .apexcharts-text.apexcharts-yaxis-label,
+    .apexcharts-xaxis-label {
+      fill: var(--bs-white) !important;
+    }
+  }
+}
+
+// ==========================
+// Admin Chart Responsive Layout
+// ==========================
+
+@media (min-width: 990px) {
+  .admin-chart-06 {
+    transform: translateX(-38px);
+  }
+}
+
+@media screen and (min-width: 999px) and (max-width: 4599px) {
+  .admin-chart-06 {
+    .apexcharts-pie {
+      g {
+        transform: translate(6px, 0px) !important;
+      }
+    }
+
+    .apexcharts-legend {
+      transform: translate(22px, 0px) !important;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  .admin-chart-06 {
+    .apexcharts-pie {
+      g {
+        transform: unset !important;
+      }
+    }
+
+    .apexcharts-canvas {
+      transform: translate(160px, 0px) !important;
+    }
+
+    .apexcharts-legend {
+      transform: translate(10px, 0px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .admin-chart-06 {
+    .apexcharts-canvas {
+      transform: translate(60px, 0px) !important;
+    }
+  }
+}
